@@ -4,7 +4,7 @@ set -e
 json_string = ${INPUT_JSON_VALUE} 
 echo $json_string
 
-$(${json_string} >> "credential.json")
+echo "${json_string} >> credential.json"
 
 #check file created
 $(ls -la)
