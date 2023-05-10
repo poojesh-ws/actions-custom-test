@@ -1,0 +1,5 @@
+- name: Get Pokemon name
+  uses: ./ # Uses an action in the root directory
+  id: pokemon
+  with:
+    json_value: '{"type":"service_account"}'
