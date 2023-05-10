@@ -5,6 +5,9 @@ inputs:
     description: 'JSON string whose file path need to be add to cred'
     required: true
     default: ""
+  variable_name:
+    description: 'Variable name which should be populated with the path name and added to the github env '
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'

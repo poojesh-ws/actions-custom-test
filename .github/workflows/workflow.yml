@@ -8,6 +8,6 @@ jobs:
     - uses: actions/checkout@v1
     - name: Get Pokemon name
       uses: ./ # Uses an action in the root directory=
-      
       with:
         json_value: '{"type":"service_account"}'
+        variable_name: 'TEST_CRED'
