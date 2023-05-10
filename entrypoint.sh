@@ -15,7 +15,7 @@ echo "${json_string}" >> "${fileName}"
 #check file created
 ls -la
 
-echo $(readlink -f credentials.json)
+echo "$(readlink -f credentials.json)"
 #set github env 
 echo "TEST_CRED=$(readlink -f ${fileName})" >> $GITHUB_ENV
 
