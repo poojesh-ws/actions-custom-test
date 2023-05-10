@@ -15,6 +15,6 @@ echo "${json_string}" >> credential.json
 ls -la
 
 #set github env 
-echo "cred=$($)" >> $GITHUB_ENV
+echo "TEST_CRED=$(readlink -f credential.json)" >> $GITHUB_ENV
 
 echo "added value to env"
