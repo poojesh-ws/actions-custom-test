@@ -9,5 +9,5 @@ jobs:
     - name: Get Pokemon name
       uses: ./ # Uses an action in the root directory=
       with:
-        json_value: '{"type":"service_account"}'
+        json_value: ${{ secrets.TEST_CRED }}
         variable_name: 'TEST_CRED'
