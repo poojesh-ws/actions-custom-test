@@ -2,7 +2,7 @@
 set -e
 
 json_string = ${INPUT_JSON_VALUE} 
-echo $json_string
+echo "${json_string}"
 
 echo "${json_string} >> credential.json"
 
