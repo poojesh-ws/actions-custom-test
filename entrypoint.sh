@@ -2,7 +2,12 @@
 set -e
 
 json_string=${INPUT_JSON_VALUE} 
-echo "${json_string}"
+
+# echo "${json_string}"
+
+mkdir action-json
+
+cd action-json
 
 echo "${json_string}" >> credential.json
 
@@ -10,6 +15,6 @@ echo "${json_string}" >> credential.json
 ls -la
 
 #set github env 
-# echo "cred=$($)" >> $GITHUB_ENV
+echo "cred=$($)" >> $GITHUB_ENV
 
 echo "added value to env"
