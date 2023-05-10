@@ -6,10 +6,11 @@ inputs:
     required: true
     default: ""
   variable_name:
-    description: 'Variable name which should be populated with the path name and added to the github env '
+    description: 'Variable name which should be populated with the path name where the json will be stored and added to the github env '
     required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.json_value}}
+    - ${{ inputs.json_value }}
+    - ${{ inputs.variable_name }}
